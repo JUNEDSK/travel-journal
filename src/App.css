@@ -1,38 +1,70 @@
-.App {
+.container{
+  max-width: 786px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.card--logo{
+  width: 100%;
   text-align: center;
+  background: #e2655f;
+}
+.card--logo img{
+  width:200px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card--img img{
+  width: 160px;
+  height: 185px;
+  border-radius: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card--row{
   display: flex;
-  flex-direction: column;
+  gap: 30px;
+  margin-top: 30px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 30px;
+  flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
+.card--location {
+  display: flex;
+  align-items: center;
+  gap:10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card--location img{
+  width: 20px;
+}
+.card--city{
+  font-weight: normal;
+  margin: 0;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.card--location a{
+ color: #918E9B;
+}
+
+.card--place{
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+
+.card--date{
+  font-weight: bold;
+  margin-top: 20px;
+  display: block;
+}
+
+.card--discription{
+margin: 0;
+margin-top: 10px;
+font-size:0.9rem;
+line-height: 1.4;
+max-width: 400px;
 }
